@@ -1,0 +1,158 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="848.8,411.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="512,931.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="PDFTEXT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="C:\Users\moham\Downloads\UiPath.pdf" sap:VirtualizedContainerService.HintSize="449.6,115.2" sap2010:WorkflowViewState.IdRef="ReadPDFText_3" Range="All" Text="[PDFTEXT]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: explorer.exe" sap:VirtualizedContainerService.HintSize="449.6,618.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0a1d2f83-0285-47c9-85de-6a3a54eb6d7c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,369.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CANVAS'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,279.2" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="0a1d2f83-0285-47c9-85de-6a3a54eb6d7c" Text="[PDFTEXT]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://docs.google.com/document/d/1jsK8OZaBbAe4_t--_Gyn-I9I27HLO04bSBrY5ZB6Eb0/edit" DesignTimeRectangle="435, 363, 1020, 1320" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='CANVAS' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CANVAS' type='' class='kix-canvas-tile-content' aaname='' /&gt;" Guid="7b2170f4-98aa-494f-a659-ee7970bb8897" InformativeScreenshot="ffe013539d412c1d7291a0895b1508a1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Untitled document - Google Docs' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="b763fa14cd55f1d548dc8ec33a32ad72.jpg" Selector="&lt;html app='chrome.exe' title='Untitled document - Google Docs' /&gt;" Title="Untitled document - Google Docs" Url="https://docs.google.com/document/d/1VgXNk4KVJcAZth-xcs25INnjWSI7fyE9wCFfLJI7Bnc/edit" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="449.6,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[PDFTEXT]" />
+  </Sequence>
+</Activity>

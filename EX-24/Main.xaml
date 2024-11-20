@@ -1,0 +1,706 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="694.4,759.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,694.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="ans" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Weekly Contest Question | UiPhoria" sap:VirtualizedContainerService.HintSize="449.6,605.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,365.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ready'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="5f906b92-fe1b-47c3-9dbb-0e4993fe33f3" CvElementArea="898, 600, 120, 62" CvTextArea="931, 622, 47, 18" CvTextArgument="Ready" CvType="Button" DesignTimeRectangle="900, 601, 117, 59" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='next' tag='BUTTON' type='' class='' aaname='Ready' check:innerText='Ready' /&gt;" Guid="79fdd615-5b3c-42c0-9428-e00b50b7203b" InformativeScreenshot="cde43f4ef7e9fbb6721c784fc60ddada.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <Flowchart sap:VirtualizedContainerService.HintSize="353.6,49.6" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+              <Flowchart.Variables>
+                <Variable x:TypeArguments="x:String" Name="text1" />
+                <Variable x:TypeArguments="x:String" Name="text2" />
+                <Variable x:TypeArguments="x:String" Name="text3" />
+                <Variable x:TypeArguments="x:String" Name="text4" />
+                <Variable x:TypeArguments="x:String" Name="text5" />
+              </Flowchart.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <av:Point x:Key="ShapeLocation">55,25</av:Point>
+                  <av:Size x:Key="ShapeSize">49.6,49.6</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">104.6,49.8 134.6,49.8 134.6,60.2 165,60.2</av:PointCollection>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Flowchart.StartNode>
+                <x:Reference>__ReferenceID6</x:Reference>
+              </Flowchart.StartNode>
+              <FlowStep x:Name="__ReferenceID1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">165,625</av:Point>
+                    <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">220.2,695.4 220.2,725.4 380.2,725.4 380.2,735</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NGetText DisplayName="Get Text 'Congratulations ! You h…'" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" TextString="[ans]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="b42301d8-b1d8-414b-bd4d-9e00eb23be78" CvTextArea="509, 500, 898, 50" CvType="AnyWordGroup" DesignTimeRectangle="511, 495, 895, 52" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='instruction' tag='H2' type='' class='' /&gt;" Guid="a923f34b-be21-412b-bbcc-710fd4db5b59" InformativeScreenshot="fd3f819feaf05200230ec4333b2af414.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <uix:Target CVScreenId="b42301d8-b1d8-414b-bd4d-9e00eb23be78" CvTextArea="480, 224, 93, 13" CvTextArgument="UIP H O RIA" CvType="Text" DesignTimeRectangle="436, 210, 138, 40" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' class='img-fluid' aaname='' /&gt;" Guid="09c39d73-16fa-4ddb-8ac2-d5ffc0a60cf8" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NGetText.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NGetText>
+                <FlowStep.Next>
+                  <FlowStep x:Name="__ReferenceID0">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:Point x:Key="ShapeLocation">325,735</av:Point>
+                        <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[ans]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:MessageBox>
+                  </FlowStep>
+                </FlowStep.Next>
+              </FlowStep>
+              <x:Reference>__ReferenceID0</x:Reference>
+              <FlowStep x:Name="__ReferenceID6">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">165,25</av:Point>
+                    <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">220.2,95.4 220.2,145</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Parallel sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Parallel_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence sap:VirtualizedContainerService.HintSize="489.6,556" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text 'Enter the below text in…'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_22" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" TextString="[text1]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvTextArea="874, 482, 161, 38" CvType="AnyWordGroup" DesignTimeRectangle="883, 485, 151, 28" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainText' tag='H4' type='' class='' /&gt;" Guid="0616eb66-fbb5-4427-960c-65b8df7d4479" InformativeScreenshot="2e170e48e069c79486b3c36b0b3bf738.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvTextArea="572, 357, 771, 43" CvTextArgument="Enter the below text in the input field" CvType="Text" DesignTimeRectangle="573, 355, 771, 52" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='instruction' tag='H2' type='' class='' aaname='Enter the below text in the input field' check:innerText='Enter the below text in the input field' /&gt;" Guid="9c241856-2aae-48b8-aa1b-651243c4b8e2" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGetText>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT mainIp'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Text="[text1]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvElementArea="707, 568, 503, 44" CvType="InputBox" DesignTimeRectangle="709, 570, 500, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mainIp' tag='INPUT' type='text' class='form-control input-text' placeholder='Enter the above text here' aaname='' /&gt;" Guid="7341abd6-dbb3-452c-8e4f-a8f89019a1dc" InformativeScreenshot="bb38469336b4ccf261a9a282d7108d22.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                  </Sequence>
+                  <Sequence sap:VirtualizedContainerService.HintSize="489.6,556" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Delay Duration="00:00:01.5000000" sap:VirtualizedContainerService.HintSize="387.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="387.2,216.8" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="9ca95a01-ec70-43f2-8d7b-d85ff482a0f5" CvElementArea="903, 658, 109, 61" CvTextArea="936, 680, 36, 15" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="905, 658, 107, 59" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='next' tag='BUTTON' type='' class='' aaname='Next' check:innerText='Next' /&gt;" Guid="b4ebafcc-ef87-4b21-ba5c-39707ed1ccbd" InformativeScreenshot="b05a86671f81b1d9545b403be6c9d44a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </Parallel>
+                <FlowStep.Next>
+                  <FlowStep x:Name="__ReferenceID5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:Point x:Key="ShapeLocation">165,145</av:Point>
+                        <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">220.2,215.4 220.2,265</av:PointCollection>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Parallel sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Parallel_10">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence sap:VirtualizedContainerService.HintSize="489.6,556" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NGetText DisplayName="Get Text 'Enter the below text in…'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_23" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" TextString="[text2]" Version="V4">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvTextArea="874, 482, 161, 38" CvType="AnyWordGroup" DesignTimeRectangle="883, 485, 151, 28" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainText' tag='H4' type='' class='' /&gt;" Guid="0616eb66-fbb5-4427-960c-65b8df7d4479" InformativeScreenshot="2e170e48e069c79486b3c36b0b3bf738.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvTextArea="572, 357, 771, 43" CvTextArgument="Enter the below text in the input field" CvType="Text" DesignTimeRectangle="573, 355, 771, 52" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='instruction' tag='H2' type='' class='' aaname='Enter the below text in the input field' check:innerText='Enter the below text in the input field' /&gt;" Guid="9c241856-2aae-48b8-aa1b-651243c4b8e2" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NGetText>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT mainIp'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Text="[text2]" Version="V4">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvElementArea="707, 568, 503, 44" CvType="InputBox" DesignTimeRectangle="709, 570, 500, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mainIp' tag='INPUT' type='text' class='form-control input-text' placeholder='Enter the above text here' aaname='' /&gt;" Guid="7341abd6-dbb3-452c-8e4f-a8f89019a1dc" InformativeScreenshot="bb38469336b4ccf261a9a282d7108d22.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                      </Sequence>
+                      <Sequence sap:VirtualizedContainerService.HintSize="489.6,556" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Delay Duration="00:00:01.5000000" sap:VirtualizedContainerService.HintSize="387.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="387.2,216.8" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="9ca95a01-ec70-43f2-8d7b-d85ff482a0f5" CvElementArea="903, 658, 109, 61" CvTextArea="936, 680, 36, 15" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="905, 658, 107, 59" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='next' tag='BUTTON' type='' class='' aaname='Next' check:innerText='Next' /&gt;" Guid="b4ebafcc-ef87-4b21-ba5c-39707ed1ccbd" InformativeScreenshot="b05a86671f81b1d9545b403be6c9d44a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                    </Parallel>
+                    <FlowStep.Next>
+                      <FlowStep x:Name="__ReferenceID4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">165,265</av:Point>
+                            <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">220.2,335.4 220.2,385</av:PointCollection>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Parallel sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Parallel_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence sap:VirtualizedContainerService.HintSize="489.6,556" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NGetText DisplayName="Get Text 'Enter the below text in…'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_25" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" TextString="[text4]" Version="V4">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvTextArea="874, 482, 161, 38" CvType="AnyWordGroup" DesignTimeRectangle="883, 485, 151, 28" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainText' tag='H4' type='' class='' /&gt;" Guid="0616eb66-fbb5-4427-960c-65b8df7d4479" InformativeScreenshot="2e170e48e069c79486b3c36b0b3bf738.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvTextArea="572, 357, 771, 43" CvTextArgument="Enter the below text in the input field" CvType="Text" DesignTimeRectangle="573, 355, 771, 52" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='instruction' tag='H2' type='' class='' aaname='Enter the below text in the input field' check:innerText='Enter the below text in the input field' /&gt;" Guid="9c241856-2aae-48b8-aa1b-651243c4b8e2" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NGetText>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT mainIp'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Text="[text4]" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvElementArea="707, 568, 503, 44" CvType="InputBox" DesignTimeRectangle="709, 570, 500, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mainIp' tag='INPUT' type='text' class='form-control input-text' placeholder='Enter the above text here' aaname='' /&gt;" Guid="7341abd6-dbb3-452c-8e4f-a8f89019a1dc" InformativeScreenshot="bb38469336b4ccf261a9a282d7108d22.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                            </uix:NTypeInto>
+                          </Sequence>
+                          <Sequence sap:VirtualizedContainerService.HintSize="489.6,556" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Delay Duration="00:00:01.5000000" sap:VirtualizedContainerService.HintSize="387.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="387.2,216.8" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="9ca95a01-ec70-43f2-8d7b-d85ff482a0f5" CvElementArea="903, 658, 109, 61" CvTextArea="936, 680, 36, 15" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="905, 658, 107, 59" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='next' tag='BUTTON' type='' class='' aaname='Next' check:innerText='Next' /&gt;" Guid="b4ebafcc-ef87-4b21-ba5c-39707ed1ccbd" InformativeScreenshot="b05a86671f81b1d9545b403be6c9d44a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                          </Sequence>
+                        </Parallel>
+                        <FlowStep.Next>
+                          <FlowStep x:Name="__ReferenceID3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <av:Point x:Key="ShapeLocation">165,385</av:Point>
+                                <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                <av:PointCollection x:Key="ConnectorLocation">220.2,455.4 220.2,505</av:PointCollection>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Parallel sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Parallel_8">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Sequence sap:VirtualizedContainerService.HintSize="489.6,556" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText DisplayName="Get Text 'Enter the below text in…'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_24" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" TextString="[text3]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvTextArea="874, 482, 161, 38" CvType="AnyWordGroup" DesignTimeRectangle="883, 485, 151, 28" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainText' tag='H4' type='' class='' /&gt;" Guid="0616eb66-fbb5-4427-960c-65b8df7d4479" InformativeScreenshot="2e170e48e069c79486b3c36b0b3bf738.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvTextArea="572, 357, 771, 43" CvTextArgument="Enter the below text in the input field" CvType="Text" DesignTimeRectangle="573, 355, 771, 52" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='instruction' tag='H2' type='' class='' aaname='Enter the below text in the input field' check:innerText='Enter the below text in the input field' /&gt;" Guid="9c241856-2aae-48b8-aa1b-651243c4b8e2" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NGetText>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT mainIp'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Text="[text3]" Version="V4">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvElementArea="707, 568, 503, 44" CvType="InputBox" DesignTimeRectangle="709, 570, 500, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mainIp' tag='INPUT' type='text' class='form-control input-text' placeholder='Enter the above text here' aaname='' /&gt;" Guid="7341abd6-dbb3-452c-8e4f-a8f89019a1dc" InformativeScreenshot="bb38469336b4ccf261a9a282d7108d22.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                </uix:NTypeInto>
+                              </Sequence>
+                              <Sequence sap:VirtualizedContainerService.HintSize="489.6,556" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Delay Duration="00:00:01.4910000" sap:VirtualizedContainerService.HintSize="387.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="387.2,216.8" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="9ca95a01-ec70-43f2-8d7b-d85ff482a0f5" CvElementArea="903, 658, 109, 61" CvTextArea="936, 680, 36, 15" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="905, 658, 107, 59" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='next' tag='BUTTON' type='' class='' aaname='Next' check:innerText='Next' /&gt;" Guid="b4ebafcc-ef87-4b21-ba5c-39707ed1ccbd" InformativeScreenshot="b05a86671f81b1d9545b403be6c9d44a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                              </Sequence>
+                            </Parallel>
+                            <FlowStep.Next>
+                              <FlowStep x:Name="__ReferenceID2">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">165,505</av:Point>
+                                    <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                    <av:PointCollection x:Key="ConnectorLocation">220.2,575.4 220.2,625</av:PointCollection>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Parallel sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Parallel_7">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="489.6,556" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NGetText DisplayName="Get Text 'Enter the below text in…'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_26" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" TextString="[text5]" Version="V4">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvTextArea="874, 482, 161, 38" CvType="AnyWordGroup" DesignTimeRectangle="883, 485, 151, 28" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainText' tag='H4' type='' class='' /&gt;" Guid="0616eb66-fbb5-4427-960c-65b8df7d4479" InformativeScreenshot="2e170e48e069c79486b3c36b0b3bf738.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvTextArea="572, 357, 771, 43" CvTextArgument="Enter the below text in the input field" CvType="Text" DesignTimeRectangle="573, 355, 771, 52" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='instruction' tag='H2' type='' class='' aaname='Enter the below text in the input field' check:innerText='Enter the below text in the input field' /&gt;" Guid="9c241856-2aae-48b8-aa1b-651243c4b8e2" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NGetText.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NGetText>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT mainIp'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Text="[text5]" Version="V4">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="45775daf-8665-449a-9d16-88a48a00b915" CvElementArea="707, 568, 503, 44" CvType="InputBox" DesignTimeRectangle="709, 570, 500, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mainIp' tag='INPUT' type='text' class='form-control input-text' placeholder='Enter the above text here' aaname='' /&gt;" Guid="7341abd6-dbb3-452c-8e4f-a8f89019a1dc" InformativeScreenshot="bb38469336b4ccf261a9a282d7108d22.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.VerifyOptions>
+                                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        </uix:VerifyExecutionTypeIntoOptions>
+                                      </uix:NTypeInto.VerifyOptions>
+                                    </uix:NTypeInto>
+                                  </Sequence>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="489.6,556" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Delay Duration="00:00:01.5000000" sap:VirtualizedContainerService.HintSize="387.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="387.2,216.8" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="9ca95a01-ec70-43f2-8d7b-d85ff482a0f5" CvElementArea="903, 658, 109, 61" CvTextArea="936, 680, 36, 15" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="905, 658, 107, 59" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='next' tag='BUTTON' type='' class='' aaname='Next' check:innerText='Next' /&gt;" Guid="b4ebafcc-ef87-4b21-ba5c-39707ed1ccbd" InformativeScreenshot="b05a86671f81b1d9545b403be6c9d44a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                    </uix:NClick>
+                                  </Sequence>
+                                </Parallel>
+                                <FlowStep.Next>
+                                  <x:Reference>__ReferenceID1</x:Reference>
+                                </FlowStep.Next>
+                              </FlowStep>
+                            </FlowStep.Next>
+                          </FlowStep>
+                        </FlowStep.Next>
+                      </FlowStep>
+                    </FlowStep.Next>
+                  </FlowStep>
+                </FlowStep.Next>
+              </FlowStep>
+              <FlowStep>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">1265,585</av:Point>
+                    <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">1321.6,661.8199999999999 1321.6,691.8199999999999 1211.6,691.8199999999999 1211.6,751.42</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="9ca95a01-ec70-43f2-8d7b-d85ff482a0f5" CvElementArea="903, 658, 109, 61" CvTextArea="936, 680, 36, 15" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="905, 658, 107, 59" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='next' tag='BUTTON' type='' class='' aaname='Next' check:innerText='Next' /&gt;" Guid="b4ebafcc-ef87-4b21-ba5c-39707ed1ccbd" InformativeScreenshot="b05a86671f81b1d9545b403be6c9d44a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+              </FlowStep>
+              <FlowStep>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">1265,365</av:Point>
+                    <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="9ca95a01-ec70-43f2-8d7b-d85ff482a0f5" CvElementArea="903, 658, 109, 61" CvTextArea="936, 680, 36, 15" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="905, 658, 107, 59" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='next' tag='BUTTON' type='' class='' aaname='Next' check:innerText='Next' /&gt;" Guid="b4ebafcc-ef87-4b21-ba5c-39707ed1ccbd" InformativeScreenshot="b05a86671f81b1d9545b403be6c9d44a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+              </FlowStep>
+              <FlowStep>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">1265,475</av:Point>
+                    <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="9ca95a01-ec70-43f2-8d7b-d85ff482a0f5" CvElementArea="903, 658, 109, 61" CvTextArea="936, 680, 36, 15" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="905, 658, 107, 59" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='next' tag='BUTTON' type='' class='' aaname='Next' check:innerText='Next' /&gt;" Guid="b4ebafcc-ef87-4b21-ba5c-39707ed1ccbd" InformativeScreenshot="b05a86671f81b1d9545b403be6c9d44a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+              </FlowStep>
+              <FlowStep>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">1265,255</av:Point>
+                    <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="003d8c3c-cbb3-481c-9ebb-7b33c65b3ae3" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://uiphoria.in/checkText.html" CVScreenId="9ca95a01-ec70-43f2-8d7b-d85ff482a0f5" CvElementArea="903, 658, 109, 61" CvTextArea="936, 680, 36, 15" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="905, 658, 107, 59" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='next' tag='BUTTON' type='' class='' aaname='Next' check:innerText='Next' /&gt;" Guid="b4ebafcc-ef87-4b21-ba5c-39707ed1ccbd" InformativeScreenshot="b05a86671f81b1d9545b403be6c9d44a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+              </FlowStep>
+              <x:Reference>__ReferenceID2</x:Reference>
+              <x:Reference>__ReferenceID3</x:Reference>
+              <x:Reference>__ReferenceID4</x:Reference>
+              <x:Reference>__ReferenceID5</x:Reference>
+            </Flowchart>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAXeSURBVGhDxVlNjxRFGO5Bot50icaLggKaMF09biAcJetBDC5M98xkL0YO+gM0wUiiYrKcvJl4JvEngHKAgwfjjaMHE8NisoQN6xLW6e4ddtfPbZ+3qnq6qrr6a2dWnuTJ9la9H89bX/0xThSwrShwbw277JPwbPtg8ubcfidFS/szVdSJSTYrb7cPQN9t8F8bqYBkTJ/9EvfYe3fOHH1KhDBRN+30IApgS7GqU6FegOB67HvvSH+gSFCroEe27rIO0y0tgGvrKTrltWOrLAzc+9G73oyM0RhcxC4L4FB8V04rBVgoZkCtLOOnMkY5ZLJd6a3hZCtAHXRlCXnjRmIceLeSlrNPxmkEVVedwjIbecX/iOvCJSRZMgPuUhjMPpuFqotm1iZM7+HCiWeg53uMOm3kHLVNjAZ5zWdjiaqXcaYCe2nlBScwoIGMoSVP94B1E0vWK0DNz6/LBVUhF64KFuEppzIDdURMVLJFeMqpLyGOySYoj5zwbEPrBVQkznVXN1Q0WToltJ5MvH6MghUzoCdQ/7OL0O2nhkxwcQF2QZPAEqcgdLLQfjIMvCAM2PmUw/G1d758D+AuKONYsEcjaiCa92ag5SecliP8zXGCJaRjr8ohDaTF0GY8zKl3YnlNd7kmm3haUNPQdb4AfaDLl1CdGahT2AQ2hTMg2biAUi2ys47eukgLyD0xaEuIU05N0X2gCKraaSqXEAV4xTOQq4yTF9NoE9thqajhLKUzYGjLZiDr0F8UwHEBpclKBamt9SSbVvkCdNZ4Gq2XeKpQUooCSpaQrVGyYgk1KKzpGDQsYMdslLyzce6152ScxzIRBNJAWgxtKXeogA2jkTMO3OXtwbFDMo6OiYspCpBv3+4fO4TX22WbRnADBdBXr3wnXurvY+pOUJA6evdqgkiD0GLT6N52op5709YJhmGf9WScxwbSQFoMbYK+e9OJffdLa2fA/o589lmy2KrxaaXp+NdbQsmis2/YZZ9zLTaN0O7AYN72MMfZZVfpiwAPu1drpARD5MYgXh3rMUjaaRMfwVpa1TvF3S7usQfDXofJeIBaRdF1BXKmxb6UG/epB1yLqQ2a/+h7h/kLAzqv60aSmI2w534l43E0kGpHgwAxcmt6FHLN82yGrzOcRBdR2V82Q7y2bT4asI6M2Rh2vdVVYOBex2vjprakM0Kre5G0c+No0DmOxhXDSOUP6WfGSVB38CkX5TQ0qFyJ+p3j0hy7fW5uPyr9hnfaK94KA/fS8tzLT0uXmqgjWbVpOZSDclFOQ0NGaCXN0klg62z7IKaMXpTtTnRf6LE+N9ZzZqg7xCWGlINyGbnH+xNLekRapbmOjZ53AUbWvcDps22svUHzmSAU/aIjQDGjoD0QOUS+3KECbSE0ShfAiLi6cPR5urvBsOgBjxjiCLuUGHuievCLLSgWls0XFFvNpRaA6x3S9hs0SjcTLfEpu+udgsNa6mhlD3uix34cBu1Z6aygWKitB8JnKRbF1PPIN6+Ma6HvnSKN0jWPtAcBP4BD2X5IuRn67Ouh73l0ciSXq3/RoaOPbLkPfClGFi8nOuWINMkQOmzl8Jnw2YdwXDcCiWnNnVTuQyyrb2kZjLCO4757MsJd8lGXvUCMBt7huN8+OcL+IRuyBR/qMQq5Tlp2rFKLJ8Oh34plEaNsLRaOUMp/wAj2qyjyLq5/lbzL29AHko3N18YRaSj+3boCCQ4OnEzvIzntCfvG5rOhFlZZpEGrL+Vao9zami8ZcDukw9Bvv4FlcgNBi4/Y6ZEeE25QTpFdoFC7vUNvpVGgd9O4yz5CAloGPJl9P0zEiHJQrsRpNR5vAYub2vT76SMv4S3uCpLdQwF/isSe7aaTo81GxriHM/7K1plXX5RpSrHLyjIkC84TIe4BGwH7GMmvgWUPgjqzGSOfaxSDYlFMGf5/gByCRUec6dG5zisQ9lbou5dxq/8Or6k/09EKgfQqCOKYRRueta6TDdmSD/lSDBFtN3Cc/wCrxK+yS2igzQAAAABJRU5ErkJggg==" InformativeScreenshot="41877753e9f90a0201766bce52316a70.jpg" Selector="&lt;html app='chrome.exe' title='Weekly Contest Question | UiPhoria' /&gt;" Title="Weekly Contest Question | UiPhoria" Url="https://uiphoria.in/checkText.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
